@@ -14,11 +14,10 @@ public class YeyakVO {
 	private String cardNum; 		 //카드번호
 	private Date payDate;   		 //결제일시
 	private Date payCancelDate;  	 //취소일시
-	private String refuContent;  	 //환불정책
 	
 	
 	public YeyakVO(String yno, MemberVO mvo, RoomVO rvo, HostVO hvo, CartVO cvo, boolean available, String cardName,
-			String cardNum, Date payDate, Date payCancelDate, String refuContent) {
+			String cardNum, Date payDate, Date payCancelDate) {
 		super();
 		this.yno = yno;
 		this.mvo = mvo;
@@ -30,7 +29,6 @@ public class YeyakVO {
 		this.cardNum = cardNum;
 		this.payDate = payDate;
 		this.payCancelDate = payCancelDate;
-		this.refuContent = refuContent;
 	}
 
 
@@ -133,17 +131,6 @@ public class YeyakVO {
 		this.payCancelDate = payCancelDate;
 	}
 
-
-	public String getRefuContent() {
-		return refuContent;
-	}
-
-
-	public void setRefuContent(String refuContent) {
-		this.refuContent = refuContent;
-	}
-	
-	
 
 	
 }
