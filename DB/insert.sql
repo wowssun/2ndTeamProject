@@ -12,3 +12,7 @@ VALUES('host123','김호스트','123456','kimho','010-0000-0000','010-1111-1111'
 -- 숙소 INSERT
 INSERT INTO ROOM
 VALUES (SEQ_ROOM_rm_no.NEXTVAL, 'host123', '코지하우스', '애월~~~101호', 4, 150000,'이미지', '오션뷰', '체크인 시간 1시 체크아웃 2시입니다~~ 좋지요?', 0, 0);
+
+-- 장바구니 INSERT
+INSERT INTO CART
+VALUES(SEQ_CART_cno.NEXTVAL,3,'IAM','2023-08-05','2023-08-26');
