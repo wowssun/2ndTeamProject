@@ -163,7 +163,7 @@ CREATE TABLE MATEAPPLY
 	-- 게시글 번호
 	mno number NOT NULL,
 	-- 신청내역 상태값
-	mnow varchar2(20),
+	mnow varchar2(20) NOT NULL,
 	PRIMARY KEY (ano)
 );
 
@@ -180,7 +180,7 @@ CREATE TABLE MATECM
 	-- 댓글 내용
 	mcmtext varchar2(100) NOT NULL,
 	-- 댓글 작성일자
-	mcmdate date,
+	mcmdate date NOT NULL,
 	PRIMARY KEY (mcmno)
 );
 
