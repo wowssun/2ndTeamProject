@@ -1,3 +1,6 @@
+/*rm_name 데이터타입 변경*/
+ALTER TABLE room MODIFY rm_name VARCHAR2(50 BYTE);
+
 /* Create Sequences */
 
 CREATE SEQUENCE SEQ_CART_cno INCREMENT BY 1 START WITH 1;
