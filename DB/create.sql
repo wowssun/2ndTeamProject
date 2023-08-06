@@ -33,6 +33,8 @@ CREATE TABLE CART
 	checkin date NOT NULL,
 	-- 체크아웃 날짜
 	checkout date NOT NULL,
+	-- 예약인원수
+	guest int NOT NULL,
 	PRIMARY KEY (cno)
 );
 
