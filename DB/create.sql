@@ -6,6 +6,10 @@ ALTER TABLE room
 ADD addr1 VARCHAR2(100);
 ALTER TABLE room
 ADD addr2 VARCHAR2(100);
+ALTER TABLE room
+ADD img2 VARCHAR2(100);
+ALTER TABLE room
+ADD img3 VARCHAR2(100);
 
 
 /*rm_name 데이터타입 변경*/
