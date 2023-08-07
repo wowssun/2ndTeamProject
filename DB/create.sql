@@ -335,10 +335,14 @@ CREATE TABLE YEYAK
 	hid varchar2(30) NOT NULL,
 	-- 숙소번호
 	rm_no number NOT NULL,
+	-- 결제번호
+	payno varchar2(50) NOT NULL,
 	-- 예약체크인
 	ye_checkin date NOT NULL,
 	-- 예약체크아웃
 	ye_checkout date NOT NULL,
+	-- 예약인원수
+	ye_guest number NOT NULL,
 	PRIMARY KEY (yno)
 );
 
@@ -484,6 +488,11 @@ ALTER TABLE MATEWISH
 
 
 ALTER TABLE YE_CANCEL
+	ADD FOREIGN KEY (payno)
+	REFERENCES PAYMENT (payno)
+;
+
+ALTER TABLE YEYAK
 	ADD FOREIGN KEY (payno)
 	REFERENCES PAYMENT (payno)
 ;
