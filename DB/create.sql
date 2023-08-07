@@ -1,3 +1,13 @@
+/*`room` 테이블의 `location` 컬럼 삭제*/
+ALTER TABLE room
+DROP COLUMN location;
+/*`room` 테이블에 컬럼 추가*/
+ALTER TABLE room
+ADD addr1 VARCHAR2(100);
+ALTER TABLE room
+ADD addr2 VARCHAR2(100);
+
+
 /*rm_name 데이터타입 변경*/
 ALTER TABLE room MODIFY rm_name VARCHAR2(50 BYTE);
 
