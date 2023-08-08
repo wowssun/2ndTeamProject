@@ -1,3 +1,28 @@
+/*REVIEW 트리거 3개 생성 쿼리*/
+CREATE OR REPLACE TRIGGER trigger_review
+AFTER INSERT
+ON review
+FOR EACH ROW
+BEGIN
+    UPDATE room SET rv_cnt = rv_cnt + 1 WHERE rm_no = :NEW.rm_no;
+    UPDATE room SET star_total = star_total + :NEW.star WHERE rm_no = :NEW.rm_no;
+END;
+
+CREATE OR REPLACE TRIGGER trigger_review_update
+AFTER UPDATE ON review
+FOR EACH ROW
+BEGIN
+    UPDATE room SET star_total = star_total - :OLD.star + :NEW.star WHERE rm_no = :OLD.rm_no;
+END;
+
+CREATE OR REPLACE TRIGGER trigger_review_delete
+AFTER DELETE ON review
+FOR EACH ROW
+BEGIN
+    UPDATE room SET rv_cnt = rv_cnt - 1, star_total = star_total - :OLD.star WHERE rm_no = :OLD.rm_no;
+END;
+
+
 /*`room` 테이블의 `location` 컬럼 삭제*/
 ALTER TABLE room
 DROP COLUMN location;
