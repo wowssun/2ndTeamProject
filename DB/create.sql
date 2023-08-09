@@ -247,8 +247,6 @@ CREATE TABLE PAYMENT
 (
 	-- 결제번호
 	payno varchar2(50) NOT NULL,
-	-- 예약번호
-	yno varchar2(50) NOT NULL,
 	-- 카드사
 	card_name varchar2(30) NOT NULL,
 	-- 카드번호
