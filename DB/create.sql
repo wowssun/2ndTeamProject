@@ -1,3 +1,21 @@
+/* yeyak 트리거 */
+CREATE OR REPLACE TRIGGER payment_cancel_trigger
+AFTER UPDATE OF pay_candate ON PAYMENT
+FOR EACH ROW
+WHEN (NEW.pay_candate IS NOT NULL)
+BEGIN
+    -- 예약 정보를 장바구니 테이블에 백업 저장
+    INSERT INTO CART (cno, rm_no, mid, checkin, checkout, guest)
+    SELECT seq_cart_cno.NEXTVAL, y.rm_no, y.mid, y.ye_checkin, y.ye_checkout, y.ye_guest
+    FROM YEYAK y
+    WHERE y.payno = :OLD.payno;
+
+    -- 예약 테이블에서 해당 예약 삭제
+    DELETE FROM YEYAK
+    WHERE payno = :OLD.payno;
+END;
+
+
 /*REVIEW 트리거 3개 생성 쿼리*/
 CREATE OR REPLACE TRIGGER trigger_review
 AFTER INSERT
