@@ -146,8 +146,6 @@ CREATE TABLE HOST
 	hphone varchar2(30) NOT NULL,
 	-- 대표번호
 	dnumber varchar2(30) NOT NULL,
-	-- 성별
-	hgender varchar2(10) NOT NULL,
 	-- 이메일
 	hemail varchar2(30) NOT NULL,
 	-- 사업자번호
@@ -179,8 +177,6 @@ CREATE TABLE J_MEMBER
 	memail varchar2(30) NOT NULL,
 	-- 전화번호
 	mphone varchar2(30) NOT NULL,
-	-- 성별
-	mgender varchar2(10) NOT NULL,
 	-- 가입일자
 	reg_date date NOT NULL,
 	PRIMARY KEY (mid)
