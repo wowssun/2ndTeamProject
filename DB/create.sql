@@ -71,7 +71,6 @@ CREATE SEQUENCE SEQ_RECORD_record_no INCREMENT BY 1 START WITH 1;
 CREATE SEQUENCE SEQ_REVIEW_rev_no INCREMENT BY 1 START WITH 1;
 CREATE SEQUENCE SEQ_RGG_rgg_no INCREMENT BY 1 START WITH 1;
 CREATE SEQUENCE SEQ_ROOM_rm_no INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE SEQ_YE_CANCEL_ycno INCREMENT BY 1 START WITH 1;
 
 
 
@@ -388,28 +387,6 @@ CREATE TABLE YEYAK
 );
 
 
--- 예약취소
-CREATE TABLE YE_CANCEL
-(
-	-- 에약취소번호
-	ycno number NOT NULL,
-	-- 예약번호
-	yno varchar2(50),
-	-- 결제번호
-	payno varchar2(50) NOT NULL,
-	-- 회원 아이디
-	mid varchar2(30),
-	-- 숙소번호
-	rm_no number,
-	-- 호스트 아이디
-	hid varchar2(30),
-	-- 예약취소체크인
-	cancel_checkin date,
-	-- 예약취소체크아웃
-	cancel_checkout date,
-	PRIMARY KEY (ycno)
-);
-
 
 
 /* Create Foreign Keys */
@@ -432,10 +409,6 @@ ALTER TABLE YEYAK
 ;
 
 
-ALTER TABLE YE_CANCEL
-	ADD FOREIGN KEY (hid)
-	REFERENCES HOST (hid)
-;
 
 
 ALTER TABLE CART
@@ -504,10 +477,6 @@ ALTER TABLE YEYAK
 ;
 
 
-ALTER TABLE YE_CANCEL
-	ADD FOREIGN KEY (mid)
-	REFERENCES J_MEMBER (mid)
-;
 
 
 ALTER TABLE MATEAPPLY
@@ -528,10 +497,6 @@ ALTER TABLE MATEWISH
 ;
 
 
-ALTER TABLE YE_CANCEL
-	ADD FOREIGN KEY (payno)
-	REFERENCES PAYMENT (payno)
-;
 
 ALTER TABLE YEYAK
 	ADD FOREIGN KEY (payno)
@@ -563,7 +528,3 @@ ALTER TABLE YEYAK
 ;
 
 
-ALTER TABLE YE_CANCEL
-	ADD FOREIGN KEY (rm_no)
-	REFERENCES ROOM (rm_no)
-;
