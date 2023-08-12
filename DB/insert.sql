@@ -3,12 +3,24 @@
 --------------------------------------------------------
 
 /*리뷰랑 외래키 잡힌 회원 insert*/
-Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('mid','김땡땡','mpw','땡벌','aas','01022223333',to_date('23/08/07','RR/MM/DD'));
-Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('test','park','111','박박','tttt','01023433333',to_date('23/08/08','RR/MM/DD'));
-Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('qwerr','김나라','aaaaaaa1*','날','abc@ddd','01022223444',to_date('23/08/10','RR/MM/DD'));
-Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('aaaaaa','김밈','qwer1111!','앙','asdf@ds','01011111111',to_date('23/08/10','RR/MM/DD'));
-Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('admin','관리자','admin111!','관리자','admin~','010234234234',to_date('23/08/10','RR/MM/DD'));
-Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('IAM','나다','1234','JEJUGAJA','ilovejeju@naver.com','010-3333-3333',to_date('23/08/11','RR/MM/DD'));
+Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('aaa123','김땡땡','aaa12345!','땡벌','aaa123@naver.com','01022223333',to_date('23/08/07','RR/MM/DD'));
+Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('bbb123','park','bbb12345!','박박','bbb123@naver.com','01023433333',to_date('23/08/08','RR/MM/DD'));
+Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('ccc123','김나라','ccc12345$','날','ccc123@daum.com','01022223444',to_date('23/08/10','RR/MM/DD'));
+Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('ddd123','김밈','ddd12345$','앙','ddd123@daum.com','01011111111',to_date('23/08/10','RR/MM/DD'));
+Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('admin','관리자','eee12345^','관리자','admin~','010234234234',to_date('23/08/10','RR/MM/DD'));
+Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('fff123','나다','fff12345^','나다나다','ilovejeju@naver.com','01033333333',to_date('23/08/11','RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE) VALUES ('ddd012', '정처녀', 'ddd01234!', '처녀마을', 'ddd012@naver.com', '01055556666', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE) VALUES ('eee345', '홍길동', 'eee34567!', '길동이', 'eee345@gmail.com', '01066667777', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('fff678', '김철수', 'fff67890!', '철이', 'fff678@naver.com', '01077778888', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('ggg901', '박영희', 'ggg90123!', '영영이', 'ggg901@gmail.com', '01088889999', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('hhh234', '이지은', 'hhh23456!', '지지니', 'hhh234@daum.net', '01099990000', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('iii567', '김민준', 'iii56789!', '민이', 'iii567@gmail.com', '01010101111', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('jjj890', '장미란', 'jjj89012!', '미미', 'jjj890@naver.com', '01012121314', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('aaa123', '김땡땡', 'aaa12345!', '땡벌', 'aaa123@naver.com', '01022223333', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('bbb456', '이말말', 'bbb45678!', '말쟁이', 'bbb456@gmail.com', '01033334444', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('ccc789', '박호호', 'ccc78901!', '호떡', 'ccc789@daum.net', '01044445555', TO_DATE('23/08/07', 'RR/MM/DD'));
+
+
 
 /*숙소랑 외래키 잡힌 호스트 insert*/
 Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE) values ('hid','hname','hpw','hnick','010-1111','02-1111','cas','12','1',to_date('23/08/04','RR/MM/DD'),'승인',to_date('23/08/04','RR/MM/DD'));
