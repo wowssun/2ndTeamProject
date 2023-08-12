@@ -58,8 +58,8 @@ ADD img3 VARCHAR2(100);
 /*데이터타입 변경*/
 ALTER TABLE room MODIFY rm_name VARCHAR2(50 BYTE);
 ALTER TABLE room MODIFY img VARCHAR2(100 BYTE);
-/* Create Sequences */
 
+/* Create Sequences */
 CREATE SEQUENCE SEQ_CART_cno INCREMENT BY 1 START WITH 1;
 CREATE SEQUENCE SEQ_FREECM_comment_no INCREMENT BY 1 START WITH 1;
 CREATE SEQUENCE SEQ_FREE_free_no INCREMENT BY 1 START WITH 1;
@@ -75,6 +75,23 @@ CREATE SEQUENCE SEQ_ROOM_rm_no INCREMENT BY 1 START WITH 1;
 
 
 /* Create Tables */
+-- 숙소 찜
+CREATE TABLE RGG
+(
+	-- 찜 번호
+	rgg_no number NOT NULL,
+	-- 회원 아이디
+	mid varchar2(30) NOT NULL,
+	-- 숙소번호
+	rm_no number NOT NULL,
+	-- 체크인 날짜
+	rcheckin date NOT NULL,
+	-- 체크아웃 날짜
+	rcheckout date NOT NULL,
+	-- 예약인원수
+	rpeople number NOT NULL,
+	PRIMARY KEY (rgg_no)
+);
 
 -- 장바구니
 CREATE TABLE CART
@@ -315,19 +332,6 @@ CREATE TABLE REVIEW
 	-- 내용
 	content varchar2(400) NOT NULL,
 	PRIMARY KEY (rev_no)
-);
-
-
--- 숙소 찜
-CREATE TABLE RGG
-(
-	-- 찜 번호
-	rgg_no number NOT NULL,
-	-- 회원 아이디
-	mid varchar2(30) NOT NULL,
-	-- 숙소번호
-	rm_no number NOT NULL,
-	PRIMARY KEY (rgg_no)
 );
 
 
