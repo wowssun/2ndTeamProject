@@ -113,23 +113,23 @@ CREATE TABLE CART
 
 
 -- 자유게시판
-CREATE TABLE FREE
-(
+CREATE TABLE free (
 	-- 게시글 번호
-	free_no number NOT NULL,
-	-- 닉네임
-	mnick varchar2(30) NOT NULL UNIQUE,
-	-- 게시글 제목
-	free_title varchar2(100) NOT NULL,
-	-- 게시글 내용
-	free_content varchar2(4000) NOT NULL,
-	-- 게시글 조회수
-	free_hit number NOT NULL,
-	-- 게시글 작성날짜
-	reg_date date NOT NULL,
-	PRIMARY KEY (free_no)
+	free_no  	NUMBER PRIMARY KEY,
+	-- 작성자
+	mid		VARCHAR2(30) NOT NULL
+             REFERENCES j_member(mid) ON DELETE CASCADE,
+	-- 제목
+	free_title	VARCHAR2(100) 	NOT NULL,
+	-- 내용
+	free_content	VARCHAR2(4000)	NOT NULL,
+	-- 작성일
+	reg_date 	DATE,
+	-- 조회수
+	free_hit 	NUMBER,
+	-- 작성자 ip
+	ip		VARCHAR2(20)
 );
-
 
 -- 자유게시판 댓글
 CREATE TABLE FREECM
