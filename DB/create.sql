@@ -138,8 +138,9 @@ CREATE TABLE FREECM
 	comment_no number NOT NULL,
 	-- 게시글 번호
 	free_no number NOT NULL,
-	-- 닉네임
-	mnick varchar2(30) NOT NULL UNIQUE,
+	-- 작성자
+	mid		VARCHAR2(30) NOT NULL
+             REFERENCES j_member(mid) ON DELETE CASCADE,
 	-- 댓글 내용
 	comment_content varchar2(200) NOT NULL,
 	-- 댓글 작성날짜
