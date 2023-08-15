@@ -9,6 +9,9 @@ Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) value
 Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('ddd123','김밈','ddd12345$','앙','ddd123@daum.com','01011111111',to_date('23/08/10','RR/MM/DD'));
 Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('admin','관리자','eee12345^','관리자','admin~','010234234234',to_date('23/08/10','RR/MM/DD'));
 Insert into JEJUOSEYO.J_MEMBER (MID,NAME,MPW,MNICK,MEMAIL,MPHONE,REG_DATE) values ('fff123','나다','fff12345^','나다나다','ilovejeju@naver.com','01033333333',to_date('23/08/11','RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('qwerr', '박호호', 'qwerr01!', '후라이', 'qwerr@daum.net', '01044445555', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('aaaaaa', '박후호호', 'aaaaaa01!', '후', 'aaaaaa@daum.net', '01044445555', TO_DATE('23/08/07', 'RR/MM/DD'));
+INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)VALUES ('hello', '박으머', 'hello01!', '무호떡', 'hello@daum.net', '01044445555', TO_DATE('23/08/07', 'RR/MM/DD'));
 
 
 
