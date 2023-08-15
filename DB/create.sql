@@ -131,23 +131,6 @@ CREATE TABLE free (
 	ip		VARCHAR2(20)
 );
 
--- 자유게시판 댓글
-CREATE TABLE FREECM
-(
-	-- 댓글 번호
-	comment_no number NOT NULL,
-	-- 게시글 번호
-	free_no number NOT NULL,
-	-- 작성자
-	mid		VARCHAR2(30) NOT NULL
-             REFERENCES j_member(mid) ON DELETE CASCADE,
-	-- 댓글 내용
-	comment_content varchar2(200) NOT NULL,
-	-- 댓글 작성날짜
-	reg_date date NOT NULL,
-	PRIMARY KEY (comment_no)
-);
-
 
 -- 호스트
 CREATE TABLE HOST
@@ -291,30 +274,6 @@ CREATE TABLE PAYMENT
 	PRIMARY KEY (payno)
 );
 
-
--- 여행기록지
-CREATE TABLE RECORD
-(
-	-- 기록지번호
-	record_no number NOT NULL,
-	-- 회원 아이디
-	mid varchar2(30) NOT NULL,
-	-- 기록지명
-	record_title varchar2(50) NOT NULL,
-	-- 여행한 날짜
-	record_day date NOT NULL,
-	-- 여행한 장소 주소
-	record_juso varchar2(200) NOT NULL,
-	-- 여행기록지 등록한 날짜
-	reg_date date NOT NULL,
-	-- 카카오 맵 API가 제공하는 지도 객체 조작을 위함
-	mapView blob NOT NULL,
-	-- 위도와 경도 정보를 저장하는 이진 데이터를 저장하는 필드
-	position blob NOT NULL,
-	PRIMARY KEY (record_no)
-);
-
-
 -- 리뷰
 CREATE TABLE REVIEW
 (
@@ -392,12 +351,6 @@ CREATE TABLE YEYAK
 
 /* Create Foreign Keys */
 
-ALTER TABLE FREECM
-	ADD FOREIGN KEY (free_no)
-	REFERENCES FREE (free_no)
-;
-
-
 ALTER TABLE ROOM
 	ADD FOREIGN KEY (hid)
 	REFERENCES HOST (hid)
@@ -410,39 +363,7 @@ ALTER TABLE YEYAK
 ;
 
 
-
-
 ALTER TABLE CART
-	ADD FOREIGN KEY (mid)
-	REFERENCES J_MEMBER (mid)
-;
-
-
-ALTER TABLE MATE
-	ADD FOREIGN KEY (mnick)
-	REFERENCES J_MEMBER (mnick)
-;
-
-
-ALTER TABLE MATEAPPLY
-	ADD FOREIGN KEY (mnick)
-	REFERENCES J_MEMBER (mnick)
-;
-
-
-ALTER TABLE MATECM
-	ADD FOREIGN KEY (mnick)
-	REFERENCES J_MEMBER (mnick)
-;
-
-
-ALTER TABLE MATEWISH
-	ADD FOREIGN KEY (mid)
-	REFERENCES J_MEMBER (mid)
-;
-
-
-ALTER TABLE RECORD
 	ADD FOREIGN KEY (mid)
 	REFERENCES J_MEMBER (mid)
 ;
@@ -464,27 +385,6 @@ ALTER TABLE YEYAK
 	ADD FOREIGN KEY (mid)
 	REFERENCES J_MEMBER (mid)
 ;
-
-
-
-
-ALTER TABLE MATEAPPLY
-	ADD FOREIGN KEY (mno)
-	REFERENCES MATE (mno)
-;
-
-
-ALTER TABLE MATECM
-	ADD FOREIGN KEY (mno)
-	REFERENCES MATE (mno)
-;
-
-
-ALTER TABLE MATEWISH
-	ADD FOREIGN KEY (mno)
-	REFERENCES MATE (mno)
-;
-
 
 
 ALTER TABLE YEYAK
