@@ -23,9 +23,16 @@ INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)
 
 
 /*숙소랑 외래키 잡힌 호스트 insert*/
-Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE) values ('hid','hname','hpw','hnick','010-1111','02-1111','cas','12','1',to_date('23/08/04','RR/MM/DD'),'승인',to_date('23/08/04','RR/MM/DD'));
-Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE) values ('nara','kimnara','a','a','010-2222','032-1111','abc','1','1',to_date('23/08/07','RR/MM/DD'),'승인',to_date('23/08/07','RR/MM/DD'));
-Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE) values ('testa','lovee','rlaskfk111!','나','01011111111','0222222222','asdfds@dddd','1','2',to_date('23/08/10','RR/MM/DD'),'승인',to_date('23/08/10','RR/MM/DD'));
+Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE) values ('hid','hname','hpw','hnick','01034455432','021113322','djaf@naver.com','2038143363','1',to_date('23/08/04','RR/MM/DD'),'승인',to_date('23/08/04','RR/MM/DD'));
+Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE)
+values ('judy123','이주디','Judy#456','주디주디','01098765432','031112233','judy@example.com','1208101336','11',to_date('23/08/11','RR/MM/DD'),'승인',to_date('23/08/11','RR/MM/DD'));
+Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE)
+values ('parkh','박한별','5t@rSky123','스카이스카이','01055558888','0411223344','sky@example.com','4295000661','12',to_date('23/08/12','RR/MM/DD'),'승인',to_date('23/08/12','RR/MM/DD'));
+Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE)
+values ('sunflower','김태양','Sun@Flower1','태양태양','01012341234','0233445566','sunflower@example.com','1372024530','13',to_date('23/08/13','RR/MM/DD'),'승인',to_date('23/08/13','RR/MM/DD'));
+Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE)
+values ('user20','정민지','M!nJ1_2023','민지민지','01020202020','0777888999','minji@example.com','2270657449','20',to_date('23/08/20','RR/MM/DD'),'승인',to_date('23/08/20','RR/MM/DD'));
+
 
 /*숙소 insert*/
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (999,'hid','제주호텔',2,200000,'lovepik-hotel-rooms-picture_501202229.jpg','제주에서 가장 좋은 호텔이에요! 어서오세요','야외수영장은 7~9월만 운영합니다.
