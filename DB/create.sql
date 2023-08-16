@@ -113,21 +113,21 @@ CREATE TABLE free (
 CREATE TABLE HOST
 (
 	-- 호스트 아이디
-	hid varchar2(30) NOT NULL,
+	hid varchar2(50) NOT NULL,
 	-- 대표자명
-	rep varchar2(30) NOT NULL,
+	rep varchar2(50) NOT NULL,
 	-- 비밀번호
-	hpw varchar2(30) NOT NULL,
+	hpw varchar2(50) NOT NULL,
 	-- 닉네임
-	hnick varchar2(30) NOT NULL UNIQUE,
+	hnick varchar2(50) NOT NULL UNIQUE,
 	-- 전화번호
-	hphone varchar2(30) NOT NULL,
+	hphone varchar2(50) NOT NULL,
 	-- 대표번호
-	dnumber varchar2(30) NOT NULL,
+	dnumber varchar2(50) NOT NULL,
 	-- 이메일
-	hemail varchar2(30) NOT NULL,
+	hemail varchar2(50) NOT NULL,
 	-- 사업자번호
-	crnum varchar2(20) NOT NULL,
+	crnum varchar2(100) NOT NULL,
 	-- 사진
 	photo varchar2(50) NOT NULL,
 	-- 신청일자
@@ -156,7 +156,7 @@ CREATE TABLE J_MEMBER
 	-- 전화번호
 	mphone varchar2(30) NOT NULL,
 	-- 가입일자
-	reg_date date NOT NULL,
+	reg_date date DEFAULT SYSDATE NOT NULL,
 	PRIMARY KEY (mid)
 );
 
