@@ -16,24 +16,49 @@ INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)
 
 
 
-/*숙소랑 외래키 잡힌 호스트 insert*/
-Insert into JEJUOSEYO.HOST (HID,REP,HPW,HNICK,HPHONE,DNUMBER,HEMAIL,CRNUM,PHOTO,REG_DATE,PROC_STATE,PROC_DATE) values ('hid','hname','hpw','hnick','01034455432','021113322','djaf@naver.com','2038143363','1',to_date('23/08/04','RR/MM/DD'),'승인',to_date('23/08/04','RR/MM/DD'));
-
-
-
 /*숙소 insert*/
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (999,'hid','제주호텔',2,200000,'lovepik-hotel-rooms-picture_501202229.jpg','제주에서 가장 좋은 호텔이에요! 어서오세요','야외수영장은 7~9월만 운영합니다.
-이용비는 별도입니다.',0,0,'제주특별자치도 서귀포시 중문관광로301번길 3','807호','야외수영장.jpg',null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (18,'hid','포레스트 힐 펜션',4,300000,'8c79cb5300d1245075865ff1599ea1d2.jpg','세화해변 앞이에요~','바베큐 문의 및 예약은 숙소 02-3333-2343로 전화주세요',0,0,'제주특별자치도 제주시 구좌읍 다랑쉬북로 68-201','세화해변로 20길 103호','8a07e52c58453d700611e0fe546d19ce.jpg','264302ae0091159f2a56d39bb3cdc553.jpg');
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (63,'hid','우드하우스',4,300000,'dcf897e57d0ee1cbd7ff9656b29c668f1.jpg',null,null,0,0,'제주특별자치도 제주시 탑동해안로 74','아만티 호텔 1001호','fb79769cfdc2280826eeb6f7f600bc2c.jpg','4141980d97c979cec6487c0743289ad6.jpg');
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (7,'hid','돌하르 방',3,180000,'28bfd6c65552e70d65cf7ed76ea6adca.jpg',' 어서오세요~~감귤밭이랑 가까워요 ','감귤따기 체험 무료!',0,0,'제주특별자치도 제주시 조천읍 북촌서1길 70','돌하르동 3호','782c74c3aacfa9eda3de8a19eb556c41.jpg','e93fedfc4f4ed6b4f5e8df506cc77694.jpg');
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (68,'testa','호호하우스',2,100000,'f1a486cdb39081214300a24488e19dec1.jpg',' 마당에 강아지가 있어요 ',null,0,0,'제주특별자치도 제주시 애월읍 애월해안로 384-26','오션빌 205호','e93fedfc4f4ed6b4f5e8df506cc776942.jpg',null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (12,'hid','코지하우스',4,200000,'images.jpg',' 조용히 즐기다 가셔요','분리수거는 필수입니다.',0,0,'제주특별자치도 제주시 애월읍 애월남안길 14-1','101호','b114bb7ac700fa9d88c429b0e1e97cd1.jpg',null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (14,'hid','로테호텔',4,100000,'lovepik-hotel-rooms-picture_5012022291.jpg','고층 뷰가 좋은 방입니다. ','야외수영장 이용료는 별도입니다. 1인당 20000원',0,0,'제주특별자치도 서귀포시 중문관광로72번길 35','905호','beef5bea13dc62462483f2ce4a54b91f.jpg','d791238ee42832901d08380b06a766b6.jpg');
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (17,'hid','제쥬',2,20000,'f38d5ab123c2948808b362114e843e33.jpg','공항 근처입니다. 주변에 편의점, 맛집 많아요','입실 13:00 퇴실 12:00 ^^',0,0,'제주특별자치도 제주시 공항로 40','감귤아파트 901호','3df4a03c3cbd22560356b1cb6ed023d1.jpg',null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (1,'nara','힐링인제주',4,1000000,'4a1add13a3741a5f7ba0184b2b5f8484.jpg','제주를 담은 숙소입니다. 방문하여 좋은 추억을 만드세요!','주차공간 충분합니다.',0,0,'제주특별자치도 제주시 애월읍 곽봉로 4-43','곽지해안 20','998847683b68f5c655bce7639bd60bf8.jpg','9cee6d39f496211df455219989044f11.jpg');
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (23,'hid','휴먼스테이',3,120000,'3386a7446aade4f71455e7282305dcb7.jpg',' 편히 쉬다 가세요~ ',null,0,0,'제주특별자치도 제주시 한림읍 협재8길 20','휴먼스테이 202호','5f58179b4c8acb39dd12dea739f74a0f1.jpg',null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (61,'hid','성산펜션',4,270000,'5e315d196c915c8bb0ce1f914551549d1.jpg','뷰가 아름다운 펜션입니다.','바베큐 장소는 따로 없습니다.',0,0,'제주특별자치도 서귀포시 성산읍 신양로122번길 24','102호',null,null);
+-숙소 insert 호스트 아이디 변경하기
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (61,'sky123','성산펜션',4,270000,'5e315d196c915c8bb0ce1f914551549d1.jpg','뷰가 아름다운 펜션입니다.','바베큐 장소는 따로 없습니다.',0,0,'제주특별자치도 서귀포시 성산읍 신양로122번길 24','102호',null,null);
+
+
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (1, 'testa', '제주호텔', 2, 200000, '1.jpg', '제주에서 가장 좋은 호텔이에요! 어서오세요', '야외수영장은 7~9월만 운영합니다. 이용비는 별도입니다.', 0, 0, '제주특별자치도 서귀포시 중문관광로301번길 3', '807호', '47.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (2, 'testa', '제주해변 리조트', 4, 350000, '2.jpg', '해변에서 바로 누릴 수 있는 편안한 휴양 리조트입니다.', '수영복을 가져오세요! 해변에서 놀기 딱 좋아요.', 0, 0, '제주특별자치도 제주시 해안로 123', '1502호', '12.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (3, 'testa', '제주풍경 호텔', 2, 180000, '3.jpg', '창 밖으로 펼쳐지는 제주의 아름다운 풍경을 감상할 수 있는 호텔입니다.', '객실 내 미니바에서 음료를 제공해드립니다.', 0, 0, '제주특별자치도 제주시 중앙로 456', '905호', '25.jpg', null);
+
+
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (4, 'sky123', '푸른 바다 뷰 호텔', 2, 220000, '21.jpg', '창 밖으로 펼쳐지는 푸른 바다를 감상할 수 있는 호텔입니다.', '바다를 가까이에서 느껴보세요!', 0, 0, '제주특별자치도 제주시 해안로 789', '1001호', '7.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (5, 'sky123', '제주 스카이 빌라', 4, 400000, '22.jpg', '하늘을 향해 뻗어나가는 빌라에서의 특별한 휴가를 즐겨보세요.', '루프탑 빌라에서 멋진 뷰를 감상할 수 있습니다.', 0, 0, '제주특별자치도 서귀포시 하늘로 123', '505호', '9.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (6, 'sky123', '제주 자연휴양 리조트', 6, 300000, '23.jpg', '자연 속에서 힐링을 찾을 수 있는 휴양 리조트입니다.', '리조트 내 자전거 대여 서비스 제공', 0, 0, '제주특별자치도 제주시 자연로 456', '1202호', '18.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (7, 'sky123', '제주 루프빌딩 호텔', 4, 280000, '40.jpg', '도심의 중심에 위치한 편리한 호텔입니다.', '지하 주차장 이용 가능 (유료)', 0, 0, '제주특별자치도 제주시 중앙로 789', '1804호', '32.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (8, 'sky123', '제주힐링 리트리트', 3, 280000, '20.jpg', '자연 속에서 힐링을 찾을 수 있는 특별한 장소입니다.', '스파 서비스 이용 시 10% 할인 혜택 제공', 0, 0, '제주특별자치도 서귀포시 산방로 789', '1103호', '6.jpg', null);
+
+
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (9, 'testa', '제주 힐사이드 코티지', 2, 260000, '41.jpg', '언덕 위에서 펼쳐지는 멋진 경치를 감상할 수 있는 코티지입니다.', '자연 친화적인 환경 속에서 편안한 휴식을 즐겨보세요.', 0, 0, '제주특별자치도 서귀포시 언덕로 789', '703호', '23.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (10, 'testa', '제주 아일랜드 리조트', 6, 380000, '42.jpg', '제주 풍경과 함께하는 환상적인 휴양 리조트입니다.', '리조트 내 워터파크 이용 가능 (유료)', 0, 0, '제주특별자치도 제주시 섬로 123', '1503호', '17.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (11, 'testa', '제주 포레스트 하우스', 4, 320000, '43.jpg', '숲 속에서 편안한 휴식을 즐길 수 있는 특별한 공간입니다.', '별빛 테라스에서 밤하늘 감상 가능', 0, 0, '제주특별자치도 서귀포시 숲길 456', '1101호', '28.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (12, 'testa', '제주 세레니티 하우스', 3, 290000, '10.jpg', '조용한 마을에서 편안한 휴식을 즐길 수 있는 특별한 공간입니다.', '마을 주변 산책로를 탐험해보세요.', 0, 0, '제주특별자치도 제주시 평화로 789', '802호', '31.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+ (13, 'testa', '제주 블루하우스', 3, 270000, '13.jpg', '아름다운 파란 하늘과 함께하는 조용한 휴식을 제공하는 하우스입니다.', '자전거 대여 서비스 제공', 0, 0, '제주특별자치도 제주시 파랑로 789', '1102호', '37.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (14, 'testa', '제주 하버뷰 빌라', 4, 330000, '14.jpg', '항구 전망을 누릴 수 있는 특별한 빌라입니다.', '해상 레스토랑에서 식사 가능', 0, 0, '제주특별자치도 서귀포시 항구로 123', '1504호', '19.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (15, 'testa', '제주 그린파크 리조트', 6, 420000, '15.jpg', '녹지 공원과 함께하는 레크레이션 리조트입니다.', '테니스 코트와 골프 연습장 이용 가능', 0, 0, '제주특별자치도 제주시 녹지로 456', '1802호', '24.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+     (16, 'sky123', '제주 빈티지 하우스', 3, 260000, '1.jpg', '유럽의 빈티지 분위기를 느낄 수 있는 특별한 하우스입니다.', '올드 스타일 가구와 조명이 돋보이는 공간', 0, 0, '제주특별자치도 제주시 빈티지로 789', '1102호', '37.jpg', '45.jpg');
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (17, 'sky123', '제주 모던 리조트', 4, 310000, '2.jpg', '현대적인 디자인과 시설을 갖춘 휴양 리조트입니다.', '피트니스 센터 및 스파 시설 이용 가능', 0, 0, '제주특별자치도 서귀포시 모던로 123', '1504호', '19.jpg', '8.jpg');
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (18, 'sky123', '제주 자유로 호스텔', 8, 180000, '3.jpg', '저렴한 가격으로 편안한 공간을 제공하는 호스텔입니다.', '공용 주방 및 라운지 이용 가능', 0, 0, '제주특별자치도 제주시 자유로 456', '1802호', '24.jpg', '11.jpg');
+
 
 
 /*리뷰 insert*/
