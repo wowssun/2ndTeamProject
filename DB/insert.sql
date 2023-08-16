@@ -309,80 +309,80 @@ VALUES('14141414','신한','2020-3030-44',122222,'SYSDATE(SYSDATE,'YYYY-MM-DD HH
 
 -- 자유게시판 INSERT
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '제주도 관광지 추천', '제주도에서 꼭 가봐야 할 관광지를 소개합니다', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'aaa123', '제주도 관광지 추천', '제주도에서 꼭 가봐야 할 관광지를 소개합니다', 0, SYSDATE);
 
 -- 2
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '제주도 여행 일정', '제주도 여행을 위한 완벽한 일정을 계획해보세요', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'jiwon04', '제주도 여행 일정', '제주도 여행을 위한 완벽한 일정을 계획해보세요', 0, SYSDATE);
 
 -- 3
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '제주도 맛집 탐방', '제주도의 맛있는 음식을 찾아 헤매는 재미를 느껴보세요', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'ccc123', '제주도 맛집 탐방', '제주도의 맛있는 음식을 찾아 헤매는 재미를 느껴보세요', 0, SYSDATE);
 
 -- 4
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '제주도 숙소 추천', '제주도에서 편안한 휴식을 위한 숙소를 소개합니다', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'ddd123', '제주도 숙소 추천', '제주도에서 편안한 휴식을 위한 숙소를 소개합니다', 0, SYSDATE);
 
 -- 5
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '제주도 자연과 함께', '제주도의 아름다운 자연 경관을 즐겨보세요', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'eee345', '제주도 자연과 함께', '제주도의 아름다운 자연 경관을 즐겨보세요', 0, SYSDATE);
 
 -- 6
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '제주도 문화 여행', '제주도의 다채로운 문화와 역사를 탐방해보세요', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'fff678', '제주도 문화 여행', '제주도의 다채로운 문화와 역사를 탐방해보세요', 0, SYSDATE);
 
 -- 7
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '제주도 해변에서', '제주도의 해변에서 시원한 바다를 만끽하세요', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'hhh234', '제주도 해변에서', '제주도의 해변에서 시원한 바다를 만끽하세요', 0, SYSDATE);
 
 -- 8
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '제주도 소소한 즐거움', '제주도에서 소소한 행복을 찾아보세요', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'aaaaaa', '제주도 소소한 즐거움', '제주도에서 소소한 행복을 찾아보세요', 0, SYSDATE);
 
 -- 9
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '제주도의 특별한 순간', '제주도에서 특별한 순간을 만들어보세요', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'ppp678', '제주도의 특별한 순간', '제주도에서 특별한 순간을 만들어보세요', 0, SYSDATE);
 
 -- 10
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '제주도로 떠나는 여정', '제주도 여행을 통해 새로운 경험을 쌓아보세요', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'kkk123', '제주도로 떠나는 여정', '제주도 여행을 통해 새로운 경험을 쌓아보세요', 0, SYSDATE);
 
 -- 11
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '제주도 속소 예약 꿀팁', '제주 여행의 시작, 공항 근처 숙소 예약을 추천합니다. 이동이 편리하며 제주의 밤을 느낄 수 있어요.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'hhh234', '제주도 속소 예약 꿀팁', '제주 여행의 시작, 공항 근처 숙소 예약을 추천합니다. 이동이 편리하며 제주의 밤을 느낄 수 있어요.', 0, SYSDATE);
 
 -- 12
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '제주도 이색 경험', '이색 경험을 원한다면 제주 오름 탐방. 제주만의 아름다운 풍경을 즐기며 특별한 추억을 만들어보세요.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'fff123', '제주도 이색 경험', '이색 경험을 원한다면 제주 오름 탐방. 제주만의 아름다운 풍경을 즐기며 특별한 추억을 만들어보세요.', 0, SYSDATE);
 
 -- 13
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '제주도 여행 꿀팁', '식사는 현지 음식점에서! 흔하지 않은 향미의 제주 음식을 맛보면 더욱 특별한 여행이 될 거에요.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'aaa123', '제주도 여행 꿀팁', '식사는 현지 음식점에서! 흔하지 않은 향미의 제주 음식을 맛보면 더욱 특별한 여행이 될 거에요.', 0, SYSDATE);
 
 -- 14
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '제주도 해변', '여름에는 제주의 해변에서 수영과 해수욕을 즐겨보세요. 맑은 바다가 당신을 기다립니다.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'ccc123', '제주도 해변', '여름에는 제주의 해변에서 수영과 해수욕을 즐겨보세요. 맑은 바다가 당신을 기다립니다.', 0, SYSDATE);
 
 -- 15
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '제주 감귤', '제주의 명물 중 하나인 제주 감귤을 손에 쥐어보세요. 신선한 감귤은 여행의 즐거움을 더해줄 거에요.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'yyy345', '제주 감귤', '제주의 명물 중 하나인 제주 감귤을 손에 쥐어보세요. 신선한 감귤은 여행의 즐거움을 더해줄 거에요.', 0, SYSDATE);
 
 -- 16
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '숙소 추천지', '제주의 아름다운 풍경을 날씨에 구애받지 않고 즐기려면, 오름과 야경명소를 주변 숙소로 선택하세요.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'uuu123', '숙소 추천지', '제주의 아름다운 풍경을 날씨에 구애받지 않고 즐기려면, 오름과 야경명소를 주변 숙소로 선택하세요.', 0, SYSDATE);
 
 -- 17
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '문화와 역사 느끼기', '문화와 역사를 느끼고 싶다면 제주의 민속마을과 박물관을 통해 특별한 시간을 보내보세요.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'kkk123', '문화와 역사 느끼기', '문화와 역사를 느끼고 싶다면 제주의 민속마을과 박물관을 통해 특별한 시간을 보내보세요.', 0, SYSDATE);
 
 -- 18
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '도예 체험 현장', '제주에서 특별한 추억을 남기고 싶다면, 제주 도예체험을 참여해 보세요. 자신만의 작품을 만들어가는 즐거움.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'eee345', '도예 체험 현장', '제주에서 특별한 추억을 남기고 싶다면, 제주 도예체험을 참여해 보세요. 자신만의 작품을 만들어가는 즐거움.', 0, SYSDATE);
 
 -- 19
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'AAAAA', '자전거 여행', '자전거 여행을 통해 제주의 자연을 더 가까이 느껴보세요. 바다 바람과 푸른 풍경이 여행을 더욱 풍성하게 만들어줄 거에요.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'hhh234', '자전거 여행', '자전거 여행을 통해 제주의 자연을 더 가까이 느껴보세요. 바다 바람과 푸른 풍경이 여행을 더욱 풍성하게 만들어줄 거에요.', 0, SYSDATE);
 
 -- 시연용
 INSERT INTO FREE (free_No, mid, free_Title, free_Content, free_hit, reg_Date)
-VALUES (seq_free_free_no.nextval, 'BBBBB', '야시장 즐기기', '저녁에는 제주의 유명한 야시장을 즐겨보세요. 현지 먹거리와 소품들을 구경하며 특별한 시간을 보낼 수 있을 거에요.', 0, SYSDATE);
+VALUES (seq_free_free_no.nextval, 'iii567', '야시장 즐기기', '저녁에는 제주의 유명한 야시장을 즐겨보세요. 현지 먹거리와 소품들을 구경하며 특별한 시간을 보낼 수 있을 거에요.', 0, SYSDATE);
