@@ -18,55 +18,55 @@ INSERT INTO JEJUOSEYO.J_MEMBER (MID, NAME, MPW, MNICK, MEMAIL, MPHONE, REG_DATE)
 
 /*숙소 insert*/
 -숙소 insert 호스트 아이디 변경하기
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (61,'sky123','성산펜션',4,270000,'5e315d196c915c8bb0ce1f914551549d1.jpg','뷰가 아름다운 펜션입니다.','바베큐 장소는 따로 없습니다.',0,0,'제주특별자치도 서귀포시 성산읍 신양로122번길 24','102호',null,null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values (SEQ_ROOM_rm_no.NEXTVAL,'sky123','성산펜션',4,270000,'5e315d196c915c8bb0ce1f914551549d1.jpg','뷰가 아름다운 펜션입니다.','바베큐 장소는 따로 없습니다.',0,0,'제주특별자치도 서귀포시 성산읍 신양로122번길 24','102호',null,null);
 
 
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (1, 'testa', '제주호텔', 2, 200000, '1.jpg', '제주에서 가장 좋은 호텔이에요! 어서오세요', '야외수영장은 7~9월만 운영합니다. 이용비는 별도입니다.', 0, 0, '제주특별자치도 서귀포시 중문관광로301번길 3', '807호', '47.jpg', null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (2, 'testa', '제주해변 리조트', 4, 350000, '2.jpg', '해변에서 바로 누릴 수 있는 편안한 휴양 리조트입니다.', '수영복을 가져오세요! 해변에서 놀기 딱 좋아요.', 0, 0, '제주특별자치도 제주시 해안로 123', '1502호', '12.jpg', null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (3, 'testa', '제주풍경 호텔', 2, 180000, '3.jpg', '창 밖으로 펼쳐지는 제주의 아름다운 풍경을 감상할 수 있는 호텔입니다.', '객실 내 미니바에서 음료를 제공해드립니다.', 0, 0, '제주특별자치도 제주시 중앙로 456', '905호', '25.jpg', null);
-
-
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (4, 'sky123', '푸른 바다 뷰 호텔', 2, 220000, '21.jpg', '창 밖으로 펼쳐지는 푸른 바다를 감상할 수 있는 호텔입니다.', '바다를 가까이에서 느껴보세요!', 0, 0, '제주특별자치도 제주시 해안로 789', '1001호', '7.jpg', null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (5, 'sky123', '제주 스카이 빌라', 4, 400000, '22.jpg', '하늘을 향해 뻗어나가는 빌라에서의 특별한 휴가를 즐겨보세요.', '루프탑 빌라에서 멋진 뷰를 감상할 수 있습니다.', 0, 0, '제주특별자치도 서귀포시 하늘로 123', '505호', '9.jpg', null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (6, 'sky123', '제주 자연휴양 리조트', 6, 300000, '23.jpg', '자연 속에서 힐링을 찾을 수 있는 휴양 리조트입니다.', '리조트 내 자전거 대여 서비스 제공', 0, 0, '제주특별자치도 제주시 자연로 456', '1202호', '18.jpg', null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (7, 'sky123', '제주 루프빌딩 호텔', 4, 280000, '40.jpg', '도심의 중심에 위치한 편리한 호텔입니다.', '지하 주차장 이용 가능 (유료)', 0, 0, '제주특별자치도 제주시 중앙로 789', '1804호', '32.jpg', null);
-Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (8, 'sky123', '제주힐링 리트리트', 3, 280000, '20.jpg', '자연 속에서 힐링을 찾을 수 있는 특별한 장소입니다.', '스파 서비스 이용 시 10% 할인 혜택 제공', 0, 0, '제주특별자치도 서귀포시 산방로 789', '1103호', '6.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주호텔', 2, 200000, '1.jpg', '제주에서 가장 좋은 호텔이에요! 어서오세요', '야외수영장은 7~9월만 운영합니다. 이용비는 별도입니다.', 0, 0, '제주특별자치도 서귀포시 중문관광로301번길 3', '807호', '47.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주해변 리조트', 4, 350000, '2.jpg', '해변에서 바로 누릴 수 있는 편안한 휴양 리조트입니다.', '수영복을 가져오세요! 해변에서 놀기 딱 좋아요.', 0, 0, '제주특별자치도 제주시 해안로 123', '1502호', '12.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주풍경 호텔', 2, 180000, '3.jpg', '창 밖으로 펼쳐지는 제주의 아름다운 풍경을 감상할 수 있는 호텔입니다.', '객실 내 미니바에서 음료를 제공해드립니다.', 0, 0, '제주특별자치도 제주시 중앙로 456', '905호', '25.jpg', null);
 
 
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (9, 'testa', '제주 힐사이드 코티지', 2, 260000, '41.jpg', '언덕 위에서 펼쳐지는 멋진 경치를 감상할 수 있는 코티지입니다.', '자연 친화적인 환경 속에서 편안한 휴식을 즐겨보세요.', 0, 0, '제주특별자치도 서귀포시 언덕로 789', '703호', '23.jpg', null);
+    (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '푸른 바다 뷰 호텔', 2, 220000, '21.jpg', '창 밖으로 펼쳐지는 푸른 바다를 감상할 수 있는 호텔입니다.', '바다를 가까이에서 느껴보세요!', 0, 0, '제주특별자치도 제주시 해안로 789', '1001호', '7.jpg', null);
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (10, 'testa', '제주 아일랜드 리조트', 6, 380000, '42.jpg', '제주 풍경과 함께하는 환상적인 휴양 리조트입니다.', '리조트 내 워터파크 이용 가능 (유료)', 0, 0, '제주특별자치도 제주시 섬로 123', '1503호', '17.jpg', null);
+    (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 스카이 빌라', 4, 400000, '22.jpg', '하늘을 향해 뻗어나가는 빌라에서의 특별한 휴가를 즐겨보세요.', '루프탑 빌라에서 멋진 뷰를 감상할 수 있습니다.', 0, 0, '제주특별자치도 서귀포시 하늘로 123', '505호', '9.jpg', null);
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (11, 'testa', '제주 포레스트 하우스', 4, 320000, '43.jpg', '숲 속에서 편안한 휴식을 즐길 수 있는 특별한 공간입니다.', '별빛 테라스에서 밤하늘 감상 가능', 0, 0, '제주특별자치도 서귀포시 숲길 456', '1101호', '28.jpg', null);
+    (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 자연휴양 리조트', 6, 300000, '23.jpg', '자연 속에서 힐링을 찾을 수 있는 휴양 리조트입니다.', '리조트 내 자전거 대여 서비스 제공', 0, 0, '제주특별자치도 제주시 자연로 456', '1202호', '18.jpg', null);
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (12, 'testa', '제주 세레니티 하우스', 3, 290000, '10.jpg', '조용한 마을에서 편안한 휴식을 즐길 수 있는 특별한 공간입니다.', '마을 주변 산책로를 탐험해보세요.', 0, 0, '제주특별자치도 제주시 평화로 789', '802호', '31.jpg', null);
+    (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 루프빌딩 호텔', 4, 280000, '40.jpg', '도심의 중심에 위치한 편리한 호텔입니다.', '지하 주차장 이용 가능 (유료)', 0, 0, '제주특별자치도 제주시 중앙로 789', '1804호', '32.jpg', null);
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
- (13, 'testa', '제주 블루하우스', 3, 270000, '13.jpg', '아름다운 파란 하늘과 함께하는 조용한 휴식을 제공하는 하우스입니다.', '자전거 대여 서비스 제공', 0, 0, '제주특별자치도 제주시 파랑로 789', '1102호', '37.jpg', null);
+    (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주힐링 리트리트', 3, 280000, '20.jpg', '자연 속에서 힐링을 찾을 수 있는 특별한 장소입니다.', '스파 서비스 이용 시 10% 할인 혜택 제공', 0, 0, '제주특별자치도 서귀포시 산방로 789', '1103호', '6.jpg', null);
+
+
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (14, 'testa', '제주 하버뷰 빌라', 4, 330000, '14.jpg', '항구 전망을 누릴 수 있는 특별한 빌라입니다.', '해상 레스토랑에서 식사 가능', 0, 0, '제주특별자치도 서귀포시 항구로 123', '1504호', '19.jpg', null);
+    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주 힐사이드 코티지', 2, 260000, '41.jpg', '언덕 위에서 펼쳐지는 멋진 경치를 감상할 수 있는 코티지입니다.', '자연 친화적인 환경 속에서 편안한 휴식을 즐겨보세요.', 0, 0, '제주특별자치도 서귀포시 언덕로 789', '703호', '23.jpg', null);
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (15, 'testa', '제주 그린파크 리조트', 6, 420000, '15.jpg', '녹지 공원과 함께하는 레크레이션 리조트입니다.', '테니스 코트와 골프 연습장 이용 가능', 0, 0, '제주특별자치도 제주시 녹지로 456', '1802호', '24.jpg', null);
+    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주 아일랜드 리조트', 6, 380000, '42.jpg', '제주 풍경과 함께하는 환상적인 휴양 리조트입니다.', '리조트 내 워터파크 이용 가능 (유료)', 0, 0, '제주특별자치도 제주시 섬로 123', '1503호', '17.jpg', null);
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-     (16, 'sky123', '제주 빈티지 하우스', 3, 260000, '1.jpg', '유럽의 빈티지 분위기를 느낄 수 있는 특별한 하우스입니다.', '올드 스타일 가구와 조명이 돋보이는 공간', 0, 0, '제주특별자치도 제주시 빈티지로 789', '1102호', '37.jpg', '45.jpg');
+    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주 포레스트 하우스', 4, 320000, '43.jpg', '숲 속에서 편안한 휴식을 즐길 수 있는 특별한 공간입니다.', '별빛 테라스에서 밤하늘 감상 가능', 0, 0, '제주특별자치도 서귀포시 숲길 456', '1101호', '28.jpg', null);
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (17, 'sky123', '제주 모던 리조트', 4, 310000, '2.jpg', '현대적인 디자인과 시설을 갖춘 휴양 리조트입니다.', '피트니스 센터 및 스파 시설 이용 가능', 0, 0, '제주특별자치도 서귀포시 모던로 123', '1504호', '19.jpg', '8.jpg');
+    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주 세레니티 하우스', 3, 290000, '10.jpg', '조용한 마을에서 편안한 휴식을 즐길 수 있는 특별한 공간입니다.', '마을 주변 산책로를 탐험해보세요.', 0, 0, '제주특별자치도 제주시 평화로 789', '802호', '31.jpg', null);
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
-    (18, 'sky123', '제주 자유로 호스텔', 8, 180000, '3.jpg', '저렴한 가격으로 편안한 공간을 제공하는 호스텔입니다.', '공용 주방 및 라운지 이용 가능', 0, 0, '제주특별자치도 제주시 자유로 456', '1802호', '24.jpg', '11.jpg');
+ (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주 블루하우스', 3, 270000, '13.jpg', '아름다운 파란 하늘과 함께하는 조용한 휴식을 제공하는 하우스입니다.', '자전거 대여 서비스 제공', 0, 0, '제주특별자치도 제주시 파랑로 789', '1102호', '37.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주 하버뷰 빌라', 4, 330000, '14.jpg', '항구 전망을 누릴 수 있는 특별한 빌라입니다.', '해상 레스토랑에서 식사 가능', 0, 0, '제주특별자치도 서귀포시 항구로 123', '1504호', '19.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (SEQ_ROOM_rm_no.NEXTVAL, 'testa', '제주 그린파크 리조트', 6, 420000, '15.jpg', '녹지 공원과 함께하는 레크레이션 리조트입니다.', '테니스 코트와 골프 연습장 이용 가능', 0, 0, '제주특별자치도 제주시 녹지로 456', '1802호', '24.jpg', null);
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+     (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 빈티지 하우스', 3, 260000, '1.jpg', '유럽의 빈티지 분위기를 느낄 수 있는 특별한 하우스입니다.', '올드 스타일 가구와 조명이 돋보이는 공간', 0, 0, '제주특별자치도 제주시 빈티지로 789', '1102호', '37.jpg', '45.jpg');
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 모던 리조트', 4, 310000, '2.jpg', '현대적인 디자인과 시설을 갖춘 휴양 리조트입니다.', '피트니스 센터 및 스파 시설 이용 가능', 0, 0, '제주특별자치도 서귀포시 모던로 123', '1504호', '19.jpg', '8.jpg');
+Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
+    (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 자유로 호스텔', 8, 180000, '3.jpg', '저렴한 가격으로 편안한 공간을 제공하는 호스텔입니다.', '공용 주방 및 라운지 이용 가능', 0, 0, '제주특별자치도 제주시 자유로 456', '1802호', '24.jpg', '11.jpg');
 
 
 
 /*리뷰 insert*/
-Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (1,'qwerr',7,to_date('23/08/01','RR/MM/DD'),4,'만족~','잘 지내다 가요!!');
-Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (2,'aaaaaa',61,to_date('23/08/04','RR/MM/DD'),3,'보통','그저 그랬어요 ');
-Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (3,'qwerr',12,to_date('23/07/07','RR/MM/DD'),5,'너무좋아','다음에 또 오고싶어요 재방문의사 있음~~');
-Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (4,'aaaaaa',7,to_date('23/07/23','RR/MM/DD'),5,'쾌적해요','숙소 청결 상태가 너무 좋아요! 교통도 편리하고 잘 놀다 갑니다');
-Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (5,'hello',18,to_date('23/08/07','RR/MM/DD'),5,'굿굿','제주느낌 물씬 나는 숙소에요 뷰도 좋고 다 만족합니다 ㅠ 최고');
+Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (SEQ_Review_rev_no.NEXTVAL,'qwerr',7,to_date('23/08/01','RR/MM/DD'),4,'만족~','잘 지내다 가요!!');
+Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (SEQ_Review_rev_no.NEXTVAL,'aaaaaa',61,to_date('23/08/04','RR/MM/DD'),3,'보통','그저 그랬어요 ');
+Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (SEQ_Review_rev_no.NEXTVAL,'qwerr',12,to_date('23/07/07','RR/MM/DD'),5,'너무좋아','다음에 또 오고싶어요 재방문의사 있음~~');
+Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (SEQ_Review_rev_no.NEXTVAL,'aaaaaa',7,to_date('23/07/23','RR/MM/DD'),5,'쾌적해요','숙소 청결 상태가 너무 좋아요! 교통도 편리하고 잘 놀다 갑니다');
+Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (SEQ_Review_rev_no.NEXTVAL,'hello',18,to_date('23/08/07','RR/MM/DD'),5,'굿굿','제주느낌 물씬 나는 숙소에요 뷰도 좋고 다 만족합니다 ㅠ 최고');
 
 
 -- 회원 INSERT
