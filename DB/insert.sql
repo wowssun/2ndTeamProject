@@ -225,26 +225,25 @@ Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) valu
 Insert into JEJUOSEYO.REVIEW (REV_NO,MID,RM_NO,REG_DATE,STAR,TITLE,CONTENT) values (SEQ_Review_rev_no.NEXTVAL,'hello',18,to_date('23/08/07','RR/MM/DD'),5,'굿굿','제주느낌 물씬 나는 숙소에요 뷰도 좋고 다 만족합니다 ㅠ 최고');
 
 
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 -- 회원 INSERT
-INSERT INTO J_MEMBER
-VALUES('IAM','나다','1234','JEJUGAJA','ilovejeju@naver.com','010-3333-3333',SYSDATE);
 
-INSERT INTO J_MEMBER
-VALUES('AnotherUsername','다나','5678','JEJU','anotheremail@naver.com','010-4444-4444',SYSDATE);
-
-INSERT INTO J_MEMBER
-VALUES('ThirdUser','라마','9876','GAJA','thirduser@naver.com','010-5555-5555',SYSDATE);
-
-INSERT INTO J_MEMBER
-VALUES('UserFour','바사','1357','JEJA','userfour@naver.com','010-6666-6666',SYSDATE);
-
-INSERT INTO J_MEMBER
-VALUES('FinalUser','사아','2468','JUGA','finaluser@naver.com','010-7777-7777',SYSDATE);
+INSERT INTO J_MEMBER VALUES('mynameis','김철수','a1234567!','chulsu','ilovejeju@naver.com','010-3333-3333',TO_DATE('23/08/10', 'RR/MM/DD'));
+INSERT INTO J_MEMBER VALUES('hello','김영희','b1234567!','heehee','anotheremail@naver.com','010-4444-4444',TO_DATE('23/08/11', 'RR/MM/DD'));
+INSERT INTO J_MEMBER VALUES('iloveu','김사랑','c1234567!','love','thirduser@naver.com','010-5555-5555',TO_DATE('23/08/12', 'RR/MM/DD'));
+INSERT INTO J_MEMBER VALUES('hihihihi','이하이','d1234567!','하이루','userfour@naver.com','010-6666-6666',TO_DATE('23/08/13', 'RR/MM/DD'));
+INSERT INTO J_MEMBER VALUES('byebye','이바이','e1234567!','바이루','finaluser@naver.com','010-7777-7777',TO_DATE('23/08/14', 'RR/MM/DD'));
 
 -- 호스트 INSERT
-INSERT INTO HOST
-VALUES('host123','김호스트','123456','kimho','010-0000-0000','010-1111-1111','hohoho@naver.com','123','사진'
-,SYSDATE,SYSDATE,SYSDATE);
+INSERT INTO HOST VALUES('host123','김호스트','ho123456!','kimho','010-0000-0000','010-1111-1111','hohoho@naver.com','123','사진',to_date('23/08/05','RR/MM/DD'),'승인',to_date('23/08/05','RR/MM/DD'));
 
 -- 숙소 INSERT
 INSERT INTO ROOM
