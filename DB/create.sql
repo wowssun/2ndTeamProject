@@ -1,47 +1,3 @@
-/* yeyak 트리거 */
-CREATE OR REPLACE TRIGGER payment_cancel_trigger
-AFTER UPDATE OF pay_candate ON PAYMENT
-FOR EACH ROW
-WHEN (NEW.pay_candate IS NOT NULL)
-BEGIN
-    -- 예약 정보를 장바구니 테이블에 백업 저장
-    INSERT INTO CART (cno, rm_no, mid, checkin, checkout, guest)
-    SELECT seq_cart_cno.NEXTVAL, y.rm_no, y.mid, y.ye_checkin, y.ye_checkout, y.ye_guest
-    FROM YEYAK y
-    WHERE y.payno = :OLD.payno;
-
-    -- 예약 테이블에서 해당 예약 삭제
-    DELETE FROM YEYAK
-    WHERE payno = :OLD.payno;
-END;
-
-
-/*REVIEW 트리거 3개 생성 쿼리*/
-CREATE OR REPLACE TRIGGER trigger_review
-AFTER INSERT
-ON review
-FOR EACH ROW
-BEGIN
-    UPDATE room SET rv_cnt = rv_cnt + 1 WHERE rm_no = :NEW.rm_no;
-    UPDATE room SET star_total = star_total + :NEW.star WHERE rm_no = :NEW.rm_no;
-END;
-
-CREATE OR REPLACE TRIGGER trigger_review_update
-AFTER UPDATE ON review
-FOR EACH ROW
-BEGIN
-    UPDATE room SET star_total = star_total - :OLD.star + :NEW.star WHERE rm_no = :OLD.rm_no;
-END;
-
-CREATE OR REPLACE TRIGGER trigger_review_delete
-AFTER DELETE ON review
-FOR EACH ROW
-BEGIN
-    UPDATE room SET rv_cnt = rv_cnt - 1, star_total = star_total - :OLD.star WHERE rm_no = :OLD.rm_no;
-END;
-
-
-
 
 /* Create Sequences */
 CREATE SEQUENCE SEQ_CART_cno INCREMENT BY 1 START WITH 1;
@@ -86,26 +42,6 @@ CREATE TABLE CART
 	-- 예약인원수
 	guest int NOT NULL,
 	PRIMARY KEY (cno)
-);
-
-
--- 자유게시판
-CREATE TABLE free (
-	-- 게시글 번호
-	free_no  	NUMBER PRIMARY KEY,
-	-- 작성자
-	mid		VARCHAR2(30) NOT NULL
-             REFERENCES j_member(mid) ON DELETE CASCADE,
-	-- 제목
-	free_title	VARCHAR2(100) 	NOT NULL,
-	-- 내용
-	free_content	VARCHAR2(4000)	NOT NULL,
-	-- 작성일
-	reg_date 	DATE,
-	-- 조회수
-	free_hit 	NUMBER,
-	-- 작성자 ip
-	ip		VARCHAR2(20)
 );
 
 
@@ -323,6 +259,25 @@ CREATE TABLE YEYAK
 	PRIMARY KEY (yno)
 );
 
+-- 자유게시판
+CREATE TABLE free (
+	-- 게시글 번호
+	free_no  	NUMBER PRIMARY KEY,
+	-- 작성자
+	mid		VARCHAR2(30) NOT NULL
+             REFERENCES j_member(mid) ON DELETE CASCADE,
+	-- 제목
+	free_title	VARCHAR2(100) 	NOT NULL,
+	-- 내용
+	free_content	VARCHAR2(4000)	NOT NULL,
+	-- 작성일
+	reg_date 	DATE,
+	-- 조회수
+	free_hit 	NUMBER,
+	-- 작성자 ip
+	ip		VARCHAR2(20)
+);
+
 
 
 
@@ -412,3 +367,46 @@ ADD img3 VARCHAR2(100);
 /*데이터타입 변경*/
 ALTER TABLE room MODIFY rm_name VARCHAR2(50 BYTE);
 ALTER TABLE room MODIFY img VARCHAR2(100 BYTE);
+
+
+
+/* yeyak 트리거 */
+CREATE OR REPLACE TRIGGER payment_cancel_trigger
+AFTER UPDATE OF pay_candate ON PAYMENT
+FOR EACH ROW
+WHEN (NEW.pay_candate IS NOT NULL)
+BEGIN
+    -- 예약 정보를 장바구니 테이블에 백업 저장
+    INSERT INTO CART (cno, rm_no, mid, checkin, checkout, guest)
+    SELECT seq_cart_cno.NEXTVAL, y.rm_no, y.mid, y.ye_checkin, y.ye_checkout, y.ye_guest
+    FROM YEYAK y
+    WHERE y.payno = :OLD.payno;
+
+    -- 예약 테이블에서 해당 예약 삭제
+    DELETE FROM YEYAK
+    WHERE payno = :OLD.payno;
+END;
+
+/*REVIEW 트리거 3개 생성 쿼리*/
+CREATE OR REPLACE TRIGGER trigger_review
+AFTER INSERT
+ON review
+FOR EACH ROW
+BEGIN
+    UPDATE room SET rv_cnt = rv_cnt + 1 WHERE rm_no = :NEW.rm_no;
+    UPDATE room SET star_total = star_total + :NEW.star WHERE rm_no = :NEW.rm_no;
+END;
+
+CREATE OR REPLACE TRIGGER trigger_review_update
+AFTER UPDATE ON review
+FOR EACH ROW
+BEGIN
+    UPDATE room SET star_total = star_total - :OLD.star + :NEW.star WHERE rm_no = :OLD.rm_no;
+END;
+
+CREATE OR REPLACE TRIGGER trigger_review_delete
+AFTER DELETE ON review
+FOR EACH ROW
+BEGIN
+    UPDATE room SET rv_cnt = rv_cnt - 1, star_total = star_total - :OLD.star WHERE rm_no = :OLD.rm_no;
+END;
