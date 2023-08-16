@@ -41,23 +41,6 @@ BEGIN
 END;
 
 
-/*`room` 테이블의 `location` 컬럼 삭제*/
-ALTER TABLE room
-DROP COLUMN location;
-/*`room` 테이블에 컬럼 추가*/
-ALTER TABLE room
-ADD addr1 VARCHAR2(100);
-ALTER TABLE room
-ADD addr2 VARCHAR2(100);
-ALTER TABLE room
-ADD img2 VARCHAR2(100);
-ALTER TABLE room
-ADD img3 VARCHAR2(100);
-
-
-/*데이터타입 변경*/
-ALTER TABLE room MODIFY rm_name VARCHAR2(50 BYTE);
-ALTER TABLE room MODIFY img VARCHAR2(100 BYTE);
 
 
 /* Create Sequences */
@@ -411,3 +394,21 @@ ALTER TABLE YEYAK
 ;
 
 
+/*테이블 다 만들고 나서 이거 하면 됨*/
+/*`room` 테이블의 `location` 컬럼 삭제*/
+ALTER TABLE room
+DROP COLUMN location;
+/*`room` 테이블에 컬럼 추가*/
+ALTER TABLE room
+ADD addr1 VARCHAR2(100);
+ALTER TABLE room
+ADD addr2 VARCHAR2(100);
+ALTER TABLE room
+ADD img2 VARCHAR2(100);
+ALTER TABLE room
+ADD img3 VARCHAR2(100);
+
+
+/*데이터타입 변경*/
+ALTER TABLE room MODIFY rm_name VARCHAR2(50 BYTE);
+ALTER TABLE room MODIFY img VARCHAR2(100 BYTE);
