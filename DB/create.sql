@@ -131,9 +131,9 @@ CREATE TABLE HOST
 	-- 사진
 	photo varchar2(50) NOT NULL,
 	-- 신청일자
-	reg_date date NOT NULL,
+	reg_date date DEFAULT SYSDATE NOT NULL,
 	-- 처리상태
-	proc_state varchar2(20) NOT NULL,
+	proc_state varchar2(20) DEFAULT '대기' NOT NULL,
 	-- 처리일자
 	proc_date date,
 	PRIMARY KEY (hid)
