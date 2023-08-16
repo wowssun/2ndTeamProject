@@ -200,6 +200,21 @@ Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CN
 Insert into JEJUOSEYO.ROOM (RM_NO,HID,RM_NAME,PEOPLE,PRICE,IMG,MEMO,NOTICE,RV_CNT,STAR_TOTAL,ADDR1,ADDR2,IMG2,IMG3) values
     (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 자유로 호스텔', 8, 180000, '3.jpg', '저렴한 가격으로 편안한 공간을 제공하는 호스텔입니다.', '공용 주방 및 라운지 이용 가능', 0, 0, '제주특별자치도 제주시 자유로 456', '1802호', '24.jpg', '11.jpg');
 
+INSERT INTO JEJUOSEYO.ROOM (RM_NO, HID, RM_NAME, PEOPLE, PRICE, IMG, MEMO, NOTICE, RV_CNT, STAR_TOTAL, ADDR1, ADDR2, IMG2, IMG3)
+VALUES (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 즐거운 펜션', 4, 220000, '5.jpg', '자연 속에서 편안한 휴식을 즐길 수 있는 펜션입니다.', '야외 바베큐 시설 완비', 0, 0, '제주특별자치도 제주시 즐거운로 789', '101호', '28.jpg', '15.jpg');
+
+INSERT INTO JEJUOSEYO.ROOM (RM_NO, HID, RM_NAME, PEOPLE, PRICE, IMG, MEMO, NOTICE, RV_CNT, STAR_TOTAL, ADDR1, ADDR2, IMG2, IMG3)
+VALUES (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 해변 뷰 빌라', 6, 320000, '7.jpg', '바다 전망이 멋지며 넓은 공간을 자랑하는 빌라입니다.', '수영장 이용 가능', 0, 0, '제주특별자치도 제주시 해변로 123', 'A동 501호', '32.jpg', '18.jpg');
+
+INSERT INTO JEJUOSEYO.ROOM (RM_NO, HID, RM_NAME, PEOPLE, PRICE, IMG, MEMO, NOTICE, RV_CNT, STAR_TOTAL, ADDR1, ADDR2, IMG2, IMG3)
+VALUES (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 힐링 레트릿', 2, 150000, '9.jpg', '조용한 분위기와 아늑한 공간으로 제주에서의 힐링을 선사합니다.', '조식 제공', 0, 0, '제주특별자치도 제주시 힐링로 789', '302호', '36.jpg', '22.jpg');
+
+INSERT INTO JEJUOSEYO.ROOM (RM_NO, HID, RM_NAME, PEOPLE, PRICE, IMG, MEMO, NOTICE, RV_CNT, STAR_TOTAL, ADDR1, ADDR2, IMG2, IMG3)
+VALUES (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 가족 여행 민박', 5, 180000, '11.jpg', '가족과 함께 편안한 시간을 보낼 수 있는 민박입니다.', '어린이 놀이시설 완비', 0, 0, '제주특별자치도 제주시 가족로 567', '101호', '40.jpg', '26.jpg');
+
+INSERT INTO JEJUOSEYO.ROOM (RM_NO, HID, RM_NAME, PEOPLE, PRICE, IMG, MEMO, NOTICE, RV_CNT, STAR_TOTAL, ADDR1, ADDR2, IMG2, IMG3)
+VALUES (SEQ_ROOM_rm_no.NEXTVAL, 'sky123', '제주 럭셔리 리조트', 3, 450000, '13.jpg', '고급스러운 분위기와 최상의 서비스를 제공하는 럭셔리 리조트입니다.', '스파 및 골프 시설 이용 가능', 0, 0, '제주특별자치도 제주시 리조트로 789', 'Suite 2001', '44.jpg', '30.jpg');
+
 
 
 /*리뷰 insert*/
